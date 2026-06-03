@@ -1,0 +1,28 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info/
+
+# Virtual environments
+.venv/
+
+# nixos-gui generated config (test artifact — written by the apply flow)
+test-config/generated.nix
+
+# Test sandbox data copied from /etc/nixos for end-to-end verification
+# (must be present on disk for the flake to evaluate, but should not be
+# committed because they contain user-specific config / settings / secrets)
+test-config/assets/
+test-config/config/
+
+# Secrets — even sops-encrypted, never commit. users should generate their own.
+test-config/secrets.yaml
+
+# Generic secret exclusions
+.env
+.env.*
+*.key
+*.pem
