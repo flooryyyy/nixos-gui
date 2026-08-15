@@ -1,5 +1,7 @@
 # nixos-gui
 
+> planning to completely rewrite this, as i'm not happy with the final state of the project. thank you for staying patient :)
+
 a web-based GUI for editing NixOS configurations. browse nixpkgs options, search packages, queue changes, and apply them with nixos-rebuild.
 
 ## features
